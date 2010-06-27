@@ -11,9 +11,9 @@
         <version>2</version>
     </parent>
 
-    <groupId>com.samaxes.stripes.xss</groupId>
+    <groupId>com.samaxes.stripes</groupId>
     <artifactId>stripesafe</artifactId>
-    <version>1.0</version>
+    <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <name>Stripes XSS Interceptor</name>
