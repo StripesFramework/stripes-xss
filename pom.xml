@@ -10,7 +10,7 @@
 
     <groupId>com.samaxes.stripes</groupId>
     <artifactId>stripesafe</artifactId>
-    <version>1.0</version>
+    <version>1.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <name>Stripes XSS Interceptor</name>
@@ -47,9 +47,9 @@
         <url>http://code.google.com/p/stripes-xss/issues/list</url>
     </issueManagement>
     <scm>
-        <connection>scm:svn:http://stripes-xss.googlecode.com/svn/tags/stripesafe-1.0</connection>
-        <developerConnection>scm:svn:https://stripes-xss.googlecode.com/svn/tags/stripesafe-1.0</developerConnection>
-        <url>http://stripes-xss.googlecode.com/svn/tags/stripesafe-1.0</url>
+        <connection>scm:svn:http://stripes-xss.googlecode.com/svn/trunk</connection>
+        <developerConnection>scm:svn:https://stripes-xss.googlecode.com/svn/trunk</developerConnection>
+        <url>http://stripes-xss.googlecode.com/svn/trunk</url>
     </scm>
 
     <prerequisites>
