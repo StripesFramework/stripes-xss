@@ -2,13 +2,13 @@
  * $Id$
  *
  * Copyright 2010 samaxes.com
- * 
+ *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
- * 
+ *
  *      http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -23,9 +23,9 @@ import java.util.regex.Pattern;
 
 /**
  * Utility class to sanitize input data.
- * 
+ *
  * @author Samuel Santos
- * @version $Revision: 22 $
+ * @version $Revision$
  */
 public class SafeHtmlUtil {
 
@@ -33,7 +33,7 @@ public class SafeHtmlUtil {
 
     /**
      * Sanitize user inputs.
-     * 
+     *
      * @param raw the input string to be sanitized
      * @return the sanitized string
      */
@@ -43,7 +43,7 @@ public class SafeHtmlUtil {
 
     /**
      * Encode HTML entities.
-     * 
+     *
      * @param input the input string to be encoded
      * @return the encoded string
      */
@@ -54,12 +54,13 @@ public class SafeHtmlUtil {
         for (int i = 0; i < next.length(); ++i) {
             char ch = next.charAt(i);
 
-            if (ch == '<')
+            if (ch == '<') {
                 sb.append("&lt;");
-            else if (ch == '>')
+            } else if (ch == '>') {
                 sb.append("&gt;");
-            else
+            } else {
                 sb.append(ch);
+            }
         }
 
         return sb.toString();
@@ -67,7 +68,7 @@ public class SafeHtmlUtil {
 
     /**
      * Simplify input to its simplest form to make encoding tricks more difficult.
-     * 
+     *
      * @param input the input string to be canonicalized
      * @return the normalized string
      */

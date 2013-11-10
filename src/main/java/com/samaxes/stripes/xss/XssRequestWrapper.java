@@ -2,13 +2,13 @@
  * $Id$
  *
  * Copyright 2010 samaxes.com
- * 
+ *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
- * 
+ *
  *      http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -27,9 +27,9 @@ import net.sourceforge.stripes.util.Log;
 
 /**
  * Wraps the {@code HttpServletRequestWrapper} in order to sanitized input parameters.
- * 
+ *
  * @author Samuel Santos
- * @version $Revision: 22 $
+ * @version $Revision$
  */
 public class XssRequestWrapper extends HttpServletRequestWrapper {
 
@@ -41,7 +41,7 @@ public class XssRequestWrapper extends HttpServletRequestWrapper {
 
     /**
      * Constructor that will parse and sanitize all input parameters.
-     * 
+     *
      * @param request the HttpServletRequest to wrap
      */
     @SuppressWarnings("unchecked")
@@ -53,7 +53,7 @@ public class XssRequestWrapper extends HttpServletRequestWrapper {
     }
 
     /**
-     * Return getParameter(String name) on the wrapped request object.
+     * {@inheritDoc} Return getParameter(String name) on the wrapped request object.
      */
     @Override
     public String getParameter(String name) {
@@ -63,7 +63,7 @@ public class XssRequestWrapper extends HttpServletRequestWrapper {
     }
 
     /**
-     * Sanitize and return getParameterMap() on the wrapped request object.
+     * {@inheritDoc} Sanitize and return getParameterMap() on the wrapped request object.
      */
     @Override
     public Map<String, String[]> getParameterMap() {
@@ -75,7 +75,7 @@ public class XssRequestWrapper extends HttpServletRequestWrapper {
     }
 
     /**
-     * Return getParameterValues(String name) on the wrapped request object.
+     * {@inheritDoc} Return getParameterValues(String name) on the wrapped request object.
      */
     @Override
     public String[] getParameterValues(String name) {
