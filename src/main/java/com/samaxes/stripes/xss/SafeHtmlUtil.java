@@ -73,6 +73,6 @@ public class SafeHtmlUtil {
      * @return the normalized string
      */
     public static String canonicalize(String input) {
-        return Normalizer.normalize(input, Form.NFD);
+        return Normalizer.normalize(input, Form.NFC);
     }
 }
