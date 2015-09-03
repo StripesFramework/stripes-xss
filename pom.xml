@@ -10,7 +10,7 @@
 
     <groupId>com.samaxes.stripes</groupId>
     <artifactId>stripesafe</artifactId>
-    <version>1.0.2-SNAPSHOT</version>
+    <version>1.0.2</version>
     <packaging>jar</packaging>
 
     <name>Stripes XSS Interceptor</name>
